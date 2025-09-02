@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália em Quadrinhos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .quadrinho {
+            border: 2px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .quadrinho h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .quadrinho p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .botao-quadrinho {
+            background-color: #2d9cdb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .botao-quadrinho:hover {
+            background-color: #237db0;
+        }
+
+        .footer-icons i {
+            font-size: 1.5em;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-white">Tropicália em Quadrinhos</h1>
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Início -->
+        <section id="inicio" class="my-5">
+            <div class="quadrinho">
+                <h3>Bem-vindo ao Mundo da Tropicália!</h3>
+                <p>Prepare-se para uma viagem no tempo e nas influências artísticas que marcaram a história do Brasil nos anos 60. A Tropicália não foi apenas uma revolução musical, mas também um movimento que mesclou as tradições brasileiras com a modernidade. Em um cenário onde a arte transcende fronteiras, este movimento influenciou tudo: da música ao cinema, do teatro à moda.</p>
+                <a href="#historia" class="botao-quadrinho">Comece sua jornada</a>
+            </div>
+        </section>
+
+        <!-- História da Tropicália -->
+        <section id="historia" class="my-5 pt-6 secao-tropicalia">
+            <div class="quadrinho">
+                <h3>O que foi a Tropicália?</h3>
+                <p>A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural brasileiro que surgiu na década de 1960. Seu auge aconteceu entre 1967 e 1968. A principal característica do movimento foi a mistura de elementos da cultura brasileira tradicional com influências internacionais, especialmente do rock e da música pop.</p>
+                <p>Artistas como Caetano Veloso, Gilberto Gil, Os Mutantes, Gal Costa e Tom Zé foram os principais nomes do movimento. Com isso, a Tropicália marcou não só a música, mas também as artes visuais, o cinema e o teatro, criando uma revolução estética e política no Brasil.</p>
+            </div>
+        </section>
+
+        <!-- Galeria (Texto como quadrinhos) -->
+        <section id="galeria" tabindex="0">
+            <h2 class="text-center pt-5">Galeria de Personagens da Tropicália</h2>
+            <div class="quadrinho">
+                <h3>Caetano Veloso</h3>
+                <p>Caetano Veloso foi um dos maiores nomes da Tropicália, sempre inovando com suas músicas e seu estilo. Ele incorporou o movimento na sua música e fez história no Brasil e no mundo. Seu estilo único mistura o tradicional com o moderno, a essência da Tropicália.</p>
+            </div>
+
+            <div class="quadrinho">
+                <h3>Gilberto Gil</h3>
+                <p>Gilberto Gil também foi um pilar essencial da Tropicália. Sua mistura de MPB com o rock psicodélico foi algo nunca antes visto. Além de ser um dos ícones mais representativos do movimento, Gil continua a influenciar a música brasileira até hoje.</p>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em Contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <div class="footer-icons">
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-tiktok"></i>
+        </div>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
